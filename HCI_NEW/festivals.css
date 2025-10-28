@@ -1,0 +1,163 @@
+/* BODY / FONT */
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f0f4ff;
+  color: #112d4e;
+}
+
+/* HEADER / NAVIGATION */
+header {
+  background-color: #3f72af;
+  color: white;
+  padding: 15px 0;
+  text-align: center;
+  border-bottom: 5px solid #112d4e;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin: 10px 0;
+  padding: 0;
+}
+
+.nav-list li a {
+  text-decoration: none;
+  color: rgb(228, 221, 221);
+  font-weight: bold;
+  padding: 8px 15px;
+  border-radius: 6px;
+}
+
+.nav-list li a:hover, .nav-list li a.active {
+  background-color: #112d4e;
+}
+
+
+/* DROPDOWN */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f7f7;
+  min-width: 160px;
+  border: 2px solid #3f72af;
+  border-radius: 8px;
+  padding: 5px 0;
+  z-index: 10;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content li a {
+  display: block;
+  color: #3f72af;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-bottom: 1px solid #dbe2ef;
+}
+
+
+/* HERO SECTION */
+.hero-festivals {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 40px 20px;
+  background: #dbe2ef;
+  border-bottom: 3px solid #3f72af;
+}
+
+.hero-text {
+  max-width: 600px;
+}
+
+.hero-text h2 {
+  font-size: 2rem;
+  color: #112d4e;
+  margin-bottom: 15px;
+}
+
+.hero-text p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.hero-image img {
+  max-width: 400px;
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* FESTIVALS SECTION */
+.festivals-section {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.festival-block {
+  margin-bottom: 40px;
+  padding: 20px;
+  border-left: 5px solid #3f72af;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+}
+
+.festival-block h3 {
+  margin-top: 0;
+  color: #3f72af;
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+}
+
+.festival-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.festival-story, .festival-science {
+  flex: 1;
+  min-width: 280px;
+  background: #f0f4ff;
+  padding: 15px;
+  border-radius: 8px;
+  line-height: 1.6;
+}
+
+.festival-science {
+  background: #e8ecf7;
+}
+
+/* FOOTER */
+/* footer {
+  text-align: center;
+  background: #3f72af;
+  color: white;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+} */
+
+footer {
+  text-align: center;
+  background: #3f72af;
+  color: white;
+  padding: 10px;
+
+}

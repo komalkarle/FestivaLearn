@@ -1,0 +1,95 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #f9f7f7, #dbe2ef);
+}
+
+/* Header and navigation */
+header {
+  background-color: #3f72af;
+  color: white;
+  padding: 15px 0;
+  text-align: center;
+  border-bottom: 10px solid #112d4e;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin: 10px 0;
+  padding: 0;
+}
+
+.nav-list li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 8px 15px;
+  border-radius: 6px;
+}
+
+.nav-list li a:hover, .nav-list li a.active {
+  background-color: #112d4e;
+}
+
+/* Dropdown menu */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f7f7;
+  min-width: 120px;
+  box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+}
+
+.dropdown-content li {
+  border-bottom: 1px solid #dbe2ef;
+}
+
+.dropdown-content li a {
+  color: #3f72af;
+  display: block;
+  padding: 10px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* About section */
+.about-section {
+  width: 75%;
+  margin: 50px auto;
+  padding: 25px;
+  background: white;
+  border-radius: 12px;
+  border: 2px solid #3f72af;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.about-section h2, .about-section h3 {
+  color: #112d4e;
+}
+
+.about-section ul {
+  margin-left: 20px;
+  padding-left: 10px;
+}
+
+.about-section p {
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background: #3f72af;
+  color: white;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}

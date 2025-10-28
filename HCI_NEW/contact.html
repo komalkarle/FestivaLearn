@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FestivaLearn | Contact</title>
+  <style>
+    /* =========================
+       INTERNAL CSS
+       ========================= */
+
+    /* Body */
+    body {
+      font-family: "Poppins", sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #f9f7f7, #dbe2ef);
+    }
+
+    /* Header and nav */
+    header {
+      background-color: #3f72af;
+      color: white;
+      padding: 15px 0;
+      text-align: center;
+      border-bottom: 5px solid #112d4e;
+    }
+
+    .nav-list {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      margin: 10px 0;
+      padding: 0;
+    }
+
+    .nav-list li a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      padding: 8px 15px;
+      border-radius: 6px;
+    }
+
+    .nav-list li a:hover,
+    .nav-list li a.active {
+      background-color: #112d4e;
+    }
+
+    /* Dropdown menu */
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f7f7;
+      min-width: 120px;
+      box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+    }
+
+    .dropdown-content li {
+      border-bottom: 1px solid #dbe2ef;
+    }
+
+    .dropdown-content li a {
+      color: #3f72af;
+      display: block;
+      padding: 10px;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    /* Contact Section */
+    .contact-section {
+      width: 400px; /* smaller width */
+      margin: 60px auto; /* less margin from top */
+      padding: 15px; /* smaller padding */
+      background: white;
+      border-radius: 12px;
+      border: 2px solid #3f72af;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .contact-section h2 {
+      color: #112d4e;
+      margin-bottom: 15px;
+    }
+
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .contact-form label {
+      text-align: left;
+      font-weight: bold;
+      color: #112d4e;
+    }
+
+    .contact-form input, 
+    .contact-form select,
+    .contact-form textarea {
+      padding: 10px;
+      border: px solid #3f72af;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+
+    .contact-form select {
+      cursor: pointer;
+    }
+
+    /* Button */
+    .btn {
+      background-color: #3f72af;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .btn:hover {
+      background-color: #112d4e;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      background: #3f72af;
+      color: white;
+      padding: 10px;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+    }
+
+  </style>
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <h1 style="margin:0;">🌕 FestivaLearn</h1> <!-- INLINE CSS -->
+    <nav>
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li class="dropdown">
+          <a href="festivals.html">Festivals ▾</a>
+          <ul class="dropdown-content">
+            <li><a href="festivals.html#jan">January</a></li>
+            <li><a href="festivals.html#oct">October</a></li>
+          </ul>
+        </li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="signin.html">Sign In</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- CONTACT FORM -->
+  <section class="contact-section">
+    <h2>Contact / Review Form</h2>
+    <p>We’d love to hear your feedback! Fill out the form below:</p>
+
+    <form class="contact-form">
+      <label for="name">Name</label>
+      <input type="text" id="name" placeholder="Enter your name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="Enter your email" required>
+
+      <label for="reason">Reason for Contact</label>
+      <select id="reason">
+        <option value="feedback">Feedback</option>
+        <option value="suggestion">Suggestion</option>
+        <option value="issue">Issue / Bug</option>
+      </select>
+
+      <label for="message">Message</label>
+      <textarea id="message" rows="2" placeholder="Write your message..." required></textarea>
+
+      <button type="submit" class="btn" 
+        style="background-color:#3f72af; color:white; border:none; border-radius:8px; cursor:pointer;">Submit</button> <!-- INLINE CSS -->
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 FestivaLearn | Made with ❤️ for Culture</p>
+  </footer>
+</body>
+</html>
